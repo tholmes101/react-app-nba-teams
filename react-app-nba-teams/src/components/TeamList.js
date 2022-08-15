@@ -3,7 +3,7 @@ import TeamCard from "./TeamCard";
 
 function TeamList({ teams, onDeleteTeam, onUpdateTeam }) {
   return (
-    <ul className="cards">
+     <ul className="cards">
       {teams.map((team) => {
         return (
           <TeamCard

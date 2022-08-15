@@ -6,7 +6,6 @@ function Header() {
       <h1>
         NBA Teams
         <span className="logo" role="img">
-          🌱
         </span>
       </h1>
     </header>
