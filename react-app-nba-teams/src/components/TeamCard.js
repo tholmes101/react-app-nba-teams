@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import {Card, Image} from "semantic-ui-react";
 
 function TeamCard({ team, onDeleteTeam, onUpdateTeam }) {
   const { id, name, image, rank } = team;
@@ -35,10 +35,11 @@ function TeamCard({ team, onDeleteTeam, onUpdateTeam }) {
   }
 
   return (
-    <li className="card">
-      <img src={image} alt={name} />
-      <h4>{name}</h4>
-      <p>Rank #: {rank}</p>
+    <Card>
+      <Image src={image} alt={name} />
+      <Card.Content>
+      <Card.Header>{name}</Card.Header>
+      <Card.Description>Rank #: {rank}</Card.Description>
       {Likes ? (
         <button className="primary" onClick={handleToggleLikes}>
           Like
@@ -57,7 +58,8 @@ function TeamCard({ team, onDeleteTeam, onUpdateTeam }) {
         />
         <button type="submit">Update Rank #</button>
       </form>
-      </li>
+      </Card.Content>
+      </Card>
   
   );
 }

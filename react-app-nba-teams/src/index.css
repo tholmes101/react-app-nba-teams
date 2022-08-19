@@ -71,6 +71,12 @@ main {
   width: 150px;
 }
 
+.searchbar {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
 label {
   font-weight: bold;
   display: block;
