@@ -2,7 +2,7 @@ import React from "react";
 import TeamCard from "./TeamCard";
 import {Card} from "semantic-ui-react"
 
-function TeamList({ teams, onDeleteTeam, onUpdateTeam }) {
+function TeamList({ teams, onDeleteTeam, onUpdateTeam,uniforms }) {
   return (
      <Card.Group itemsPerRow = {4} 
      className="cards">
@@ -11,6 +11,7 @@ function TeamList({ teams, onDeleteTeam, onUpdateTeam }) {
           <TeamCard
             key={team.id}
             team={team}
+            uniform={team.uniforms}
             onDeleteTeam={onDeleteTeam}
             onUpdateTeam={onUpdateTeam}
           />

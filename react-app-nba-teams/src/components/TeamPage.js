@@ -8,7 +8,7 @@ function TeamPage() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:3000/teams")
+    fetch("http://localhost:9292/teams")
       .then((r) => r.json())
       .then((teamsArray) => {
         setTeams(teamsArray);

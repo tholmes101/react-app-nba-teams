@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import {Card, Image} from "semantic-ui-react";
 
-function TeamCard({ team, onDeleteTeam, onUpdateTeam }) {
-  const { id, name, image, rank } = team;
+function TeamCard({ team, uniform, onDeleteTeam, onUpdateTeam }) {
+  const { id, name, image, rank} = team;
 
   const [Likes, setLikes] = useState(true);
   const [updatedRank, setUpdatedRank] = useState(rank);
@@ -12,7 +12,7 @@ function TeamCard({ team, onDeleteTeam, onUpdateTeam }) {
   }
 
   function handleDeleteClick() {
-    fetch(`http://localhost:3000/teams/${id}`, {
+    fetch(`http://localhost:9292/teams/${id}`, {
       method: "DELETE",
     });
 
@@ -21,7 +21,7 @@ function TeamCard({ team, onDeleteTeam, onUpdateTeam }) {
 
   function handleRankFormSubmit(e) {
     e.preventDefault();
-    fetch(`http://localhost:3000/teams/${id}`, {
+    fetch(`http://localhost:9292/teams/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -39,7 +39,13 @@ function TeamCard({ team, onDeleteTeam, onUpdateTeam }) {
       <Image src={image} alt={name} />
       <Card.Content>
       <Card.Header>{name}</Card.Header>
-      <Card.Description>Rank #: {rank}</Card.Description>
+      <Card.Description>
+        Rank #: {rank}
+        <ol>
+         Uniforms: {uniform.map (uniform => <li>Name: {uniform.name} | Number: {uniform.number}</li>)} 
+          </ol>
+      </Card.Description>
+  
       {Likes ? (
         <button className="primary" onClick={handleToggleLikes}>
           Like
