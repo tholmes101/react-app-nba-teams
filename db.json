@@ -1,0 +1,40 @@
+{
+  "teams": [
+    {
+      "id": 1,
+      "name": "Boston Celtics",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Boston_Celtics.svg/300px-Boston_Celtics.svg.png",
+      "rank": 10
+    },
+    {
+      "id": 2,
+      "name": "Charlotte Hornets",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/Charlotte_Hornets_%282014%29.svg/315px-Charlotte_Hornets_%282014%29.svg.png",
+      "rank": 24
+    },
+    {
+      "id": 6,
+      "name": "Washington Wizards",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Washington_Wizards_logo.svg/300px-Washington_Wizards_logo.svg.png",
+      "rank": 25
+    },
+    {
+      "name": "Utah Jazz",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/52/Utah_Jazz_logo_2022.svg/345px-Utah_Jazz_logo_2022.svg.png",
+      "rank": 26,
+      "id": 7
+    },
+    {
+      "name": "Chicago Bulls",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/300px-Chicago_Bulls_logo.svg.png",
+      "rank": 12,
+      "id": 8
+    },
+    {
+      "name": "Denver Nuggets",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Denver_Nuggets.svg/300px-Denver_Nuggets.svg.png",
+      "rank": 8,
+      "id": 10
+    }
+  ]
+}
