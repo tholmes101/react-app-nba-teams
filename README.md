@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# NBA Teams App
+
+## Description
+
+This project is designed to display pictures of NBA Teams.
+It consists of a form so that you can add your favorite team to the list.
+It also has a search form so that you can search for a particular team.
+You can choose to like or dislike a particular team, or delete a team.
+
+## Setup
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
