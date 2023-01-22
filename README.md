@@ -11,8 +11,6 @@ You can choose to like or dislike a particular team, or delete a team.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Setup
-
 When you're ready to start building your project, run:
 
 ```sh
